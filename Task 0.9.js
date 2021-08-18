@@ -3,4 +3,4 @@ function vowelsCheck(string) {
   vowels = string.toLowerCase().match(regEx);
   return vowels;
 }
-console.log(vowelsCheck("Tshediso"));
+console.log("Vowels: "+(vowelsCheck("Tsheedisoo".replace(/[^\w\s]|(.)(?=\1)/gi,''))));
