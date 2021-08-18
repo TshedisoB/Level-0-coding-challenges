@@ -9,6 +9,6 @@ function sameLetters(word1,word2) {
       }
     }
   }
-  return "Common letters: " + res.split("");
+  return res.split("");
 }
-console.log(sameLetters("house", "computers"));
+console.log("Common letters: "+(sameLetters("houuse".replace(/(.)\1+/g, '$1'), "compuuuters".replace(/(.)\1+/g, '$1'))));
