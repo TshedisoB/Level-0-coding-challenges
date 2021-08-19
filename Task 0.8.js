@@ -3,7 +3,7 @@ function hoursAndMinutes(num) {
   let min = num % 60;
 
   if(hours == 0 && min == 0) {
-    return `${hours} hour, ${min} minute`;
+    return `${hours} hours, ${min} minutes`;
   }if(hours == 1 && min == 1) {
     return `${hours} hour, ${min} minute`;
   }if(hours == 1 && min == 0) {
