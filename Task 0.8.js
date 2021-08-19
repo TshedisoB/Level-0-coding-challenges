@@ -7,7 +7,7 @@ function hoursAndMinutes(num) {
   }if(hours == 1 && min == 1) {
     return `${hours} hour, ${min} minute`;
   }if(hours == 1 && min == 0) {
-    return `${hours} hour, ${min} minute`;
+    return `${hours} hour, ${min} minutes`;
   } else if (hours == 1 && min > 1) {
     return `${hours} hour, ${min} minutes`;
   } else if (hours > 1 && min == 1) {
