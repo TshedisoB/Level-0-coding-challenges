@@ -1,6 +1,6 @@
 function vowelsCheck(string) {
   let regEx = /[aeiou]/g;
-  vowels = string.toLowerCase().match(regEx);
-  return vowels;
+  vowels = string.replace(/[^\w\s]|(.)(?=\1)/gi,',').toLowerCase().match(regEx);
+  console.log(`Vowels: ${vowels}`);
 }
-console.log("Vowels: "+(vowelsCheck("Tsheedisoo".replace(/[^\w\s]|(.)(?=\1)/gi,''))));
+vowelsCheck("TshEEdisoo");
