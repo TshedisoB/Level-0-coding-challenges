@@ -2,21 +2,22 @@ function hoursAndMinutes(num) {
   let hours = Math.floor(num / 60);
   let min = num % 60;
 
-  if(hours == 0 && min == 0) {
-    console.log (`${hours} hours, ${min} minutes`);
-  }if(hours == 1 && min == 1) {
+  if (hours == 0 && min == 0) {
+    console.log(`${hours} hours, ${min} minutes`);
+  }
+  if (hours == 1 && min == 1) {
     console.log(`${hours} hour, ${min} minute`);
-  }if(hours == 1 && min == 0) {
+  }
+  if (hours == 1 && min == 0) {
     console.log(`${hours} hour, ${min} minutes`);
   } else if (hours == 1 && min > 1) {
     console.log(`${hours} hour, ${min} minutes`);
   } else if (hours > 1 && min == 1) {
     console.log(`${hours} hours, ${min} minute`);
-  } else if (hours > 1 && min > 1){
+  } else if (hours > 1 && min > 1) {
     console.log(`${hours} hours, ${min} minutes`);
   }
 }
-
 hoursAndMinutes(0);
 hoursAndMinutes(60);
 hoursAndMinutes(61);
