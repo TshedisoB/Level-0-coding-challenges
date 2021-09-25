@@ -1,6 +1,6 @@
 function hoursAndMinutes(num) {
-  let hours = Math.floor(num / 60);
-  let min = num % 60;
+  const hours = Math.floor(num / 60);
+  const min = num % 60;
 
   if (hours == 0 && min == 0) {
     console.log(`${hours} hours, ${min} minutes`);
