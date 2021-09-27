@@ -1,7 +1,10 @@
 function areaOfTriangle(num1, num2, num3) {
-  const semiPer = (num1 + num2 + num3) / 2;
+  const semiPerimeter = (num1 + num2 + num3) / 2;
   const area = Math.sqrt(
-    semiPer * (semiPer - num1) * (semiPer - num2) * (semiPer - num3)
+    semiPerimeter *
+      (semiPerimeter - num1) *
+      (semiPerimeter - num2) *
+      (semiPerimeter - num3)
   );
   console.log(area);
 }
