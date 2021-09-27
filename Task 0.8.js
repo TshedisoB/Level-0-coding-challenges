@@ -4,22 +4,26 @@ function hoursAndMinutes(num) {
 
   if (hours == 0 && min == 0) {
     console.log(`${hours} hours, ${min} minutes`);
-  }
-  if (hours == 1 && min == 1) {
+  } else if (hours == 1 && min == 1) {
     console.log(`${hours} hour, ${min} minute`);
-  }
-  if (hours == 1 && min == 0) {
+  } else if (hours == 1 && min == 0) {
     console.log(`${hours} hour, ${min} minutes`);
   } else if (hours == 1 && min > 1) {
     console.log(`${hours} hour, ${min} minutes`);
+  } else if (hours < 1 && min > 1) {
+    console.log(`${hours} hours, ${min} minutes`);
+  } else if (hours > 1 && min > 1) {
+    console.log(`${hours} hours, ${min} minutes`);
   } else if (hours > 1 && min == 1) {
     console.log(`${hours} hours, ${min} minute`);
+  } else if (hours > 1 && min == 0) {
+    console.log(`${hours} hours, ${min} minutes`);
   } else if (hours > 1 && min > 1) {
     console.log(`${hours} hours, ${min} minutes`);
   }
 }
 hoursAndMinutes(0);
+hoursAndMinutes(57);
 hoursAndMinutes(60);
-hoursAndMinutes(61);
-hoursAndMinutes(63);
-hoursAndMinutes(123);
+hoursAndMinutes(66);
+hoursAndMinutes(120);
