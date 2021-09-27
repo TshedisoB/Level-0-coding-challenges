@@ -1,5 +1,8 @@
 function sameLetters(word1, word2) {
   let word3 = "";
+  word1 = word1.toLowerCase();
+  word2 = word2.toLowerCase();
+  
   for (let i = 0; i < word1.length; i++) {
     for (let j = 0; j < word2.length; j++) {
       if (word1[i] === word2[j]) {
