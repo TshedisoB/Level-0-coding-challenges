@@ -6,6 +6,6 @@ function areaOfTriangle(num1, num2, num3) {
       (semiPerimeter - num2) *
       (semiPerimeter - num3)
   );
-  console.log(area);
+  return area;
 }
 areaOfTriangle(4, 3, 5);
